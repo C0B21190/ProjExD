@@ -1,4 +1,4 @@
-import random
+import random as random
 def main():
     seikai = shutudai()
     kaitou(seikai)
