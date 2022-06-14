@@ -46,9 +46,9 @@ def kaitou(seikai):
                 return 0 #文字解答で不正解
             seikai.remove(c)
         print("全問正解です.")
-        return  #完全数の場合
+        return 1 #完全数の場合
 
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
