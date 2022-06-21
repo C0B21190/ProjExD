@@ -27,8 +27,8 @@ import tkinter.messagebox as tkm
 def button_click(event):
     btn = event.widget
     num = btn['text']
-    tkm.showinfo('',f'{num}押しました') 
-
+    #tkm.showinfo('',f'{num}押しました') 
+    entry.insert(tk.END,f'{num}')
 
 
 if __name__ == '__main__':
@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     entry = tk.Entry(root,width=10,justify='right',font=('Times New Roman',40))
     entry.grid(row=0,column=0,columnspan=3)
-    # entry.insert(tk.END,"")
+    
 
     r,c = 1,0
     for num in range(9,-1,-1):
