@@ -13,7 +13,7 @@ def button_click(event):
 
     else:
         #tkm.showinfo('',f'{num}押しました') #警告メッセージ
-        entry.insert(tk.END,num')
+        entry.insert(tk.END,num)
 
 
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     r,c = 1,0
     #l=['9','8','7','6','5','4','3','2','1','0','+','=']
-    for i,num in enumerate([9,8,7,6,5,4,3,2,1,"+",'=']):
+    for i,num in enumerate([9,8,7,6,5,4,3,2,1,0,"+",'=']):
         btn = tk.Button(root,
                         text=f'{num}',
                         width=4,
