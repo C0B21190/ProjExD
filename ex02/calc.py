@@ -31,9 +31,9 @@ def button_click(event):
         entry.insert(tk.END,a)
     elif num == '+/-':
         gyaku = entry.get()
-        a=int(gyaku)*-1
+        result=int(gyaku)*-1
         entry.delete(0,tk.END)
-        entry.insert(tk.END,a)
+        entry.insert(tk.END,result)
     elif num == '1/x':
         gyaku = entry.get()
         a=1/int(gyaku)
