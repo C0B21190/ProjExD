@@ -29,11 +29,18 @@ def button_click(event):
     num = btn['text']
     tkm.showinfo('',f'{num}押しました') 
 
+
+
 if __name__ == '__main__':
     root = tk.Tk()
     root.geometry('300x500')
     root.title('denntaku')
-    r,c = 0,0
+
+    entry = tk.Entry(root,width=10,justify='right',font=('Times New Roman',40))
+    entry.grid(row=0,column=0,columnspan=3)
+    # entry.insert(tk.END,"")
+
+    r,c = 1,0
     for num in range(9,-1,-1):
         btn = tk.Button(root,
                         text=f'{num}',
