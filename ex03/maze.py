@@ -40,7 +40,7 @@ def main_proc():
 
     if cx==gcx and cy==gcy:
         is_g = True
-        canvas.create_text(750,450,text='okkkk',font=('yyyy',50))
+        canvas.create_text(750,450,text='Congratulation!',font=('Arial',50))
     if not is_g:
         root.after(100, main_proc)
 
