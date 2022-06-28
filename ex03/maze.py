@@ -5,6 +5,10 @@ def key_down(event):
     key = event.keysym
     print(f'{key}woshita')
 
+def key_up(event):
+    global key
+    key = ''
+
 if __name__ == "__main__":
     root = tk.Tk('迷えるこうかとん')
     canvas = tk.Canvas(root,
@@ -18,4 +22,5 @@ if __name__ == "__main__":
 
     key = ''
     root.bind('<KeyPress>',key_down)
+    root.bind('<KeyRelease>',key_up)
     root.mainloop()
