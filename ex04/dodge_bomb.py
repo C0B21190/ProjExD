@@ -1,5 +1,4 @@
 import pygame as pg
-import sys
 
 
 def main():
