@@ -26,6 +26,8 @@ def main():
     bmimg_rct = bmimg_sfc.get_rect()
     bmimg_rct.centerx = random.randint(0, screen_rct.width)
     bmimg_rct.centery = random.randint(0, screen_rct.height)
+    
+    #6
     vx, vy = +1, +1
 
 
@@ -45,6 +47,9 @@ def main():
         if key_states[pg.K_RIGHT] == True: kkimg_rct.centerx += 1
         screen_sfc.blit(kkimg_sfc,kkimg_rct)
         
+        #06
+        bmimg_rct.move_ip(vx, vy)
+
         #05
         screen_sfc.blit(bmimg_sfc,bmimg_rct)
 
