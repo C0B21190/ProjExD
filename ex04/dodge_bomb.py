@@ -8,7 +8,7 @@ def main():
     clock = pg.time.Clock()
 
     #01
-    pg.display.set_caption('dggdgdg')
+    pg.display.set_caption('楽しみこうかとん')
     screen_sfc = pg.display.set_mode((1280, 720))
     screen_rct = screen_sfc.get_rect()
     bgimg_sfc = pg.image.load('fig/pg_bg.jpg')
