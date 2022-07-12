@@ -106,8 +106,8 @@ def check_bound(rct, scr_rct):
     return yoko, tate
 
 
-#if __name__ == "__main__":
+if __name__ == "__main__":
     pg.init()
     main()
     pg.quit()
-    #sys.exit()
+    sys.exit()
