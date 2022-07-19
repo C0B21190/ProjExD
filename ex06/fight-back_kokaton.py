@@ -4,7 +4,6 @@ import pygame
 from pygame import mixer
 
 pygame.init()
-
 #すくりん
 screen = pygame.display.set_mode((800, 600))
 
@@ -39,7 +38,7 @@ for i in range(num_of_enemies):
 #VScodeという名前の弾
 bulletImg = pygame.image.load('./ex06/image/bullet.png')
 bulletX = 0
-bulletY = 480
+bulletY = 48
 bulletX_change = 0
 bulletY_change = 10
 bullet_state = "ready"
