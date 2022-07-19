@@ -4,7 +4,8 @@ import pygame
 from pygame import mixer
 
 pygame.init()
-#すくりん
+
+#スクリーン
 screen = pygame.display.set_mode((800, 600))
 
 #背景
