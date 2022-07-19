@@ -11,14 +11,14 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 #背景
-background = pygame.image.load('./ex06/background.jpg')
+background = pygame.image.load('./ex06/image/background.jpg')
 
 #声
-mixer.music.load("./ex06/background.wav")
+mixer.music.load("./ex06/image/background.wav")
 mixer.music.play(-1)
 
 #こうかとん
-playerImg = pygame.image.load('./ex06/kokato.png')
+playerImg = pygame.image.load('./ex06/image/kokato.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -32,14 +32,14 @@ enemyY_change = []
 num_of_enemies = 4
 
 for i in range(num_of_enemies):
-    enemyImg.append(pygame.image.load('./ex06/enemy.png'))
+    enemyImg.append(pygame.image.load('./ex06/image/enemy.png'))
     enemyX.append(random.randint(0, 736))
     enemyY.append(random.randint(50, 150))
     enemyX_change.append(4)
     enemyY_change.append(10)
 
 #VScodeという名前の弾
-bulletImg = pygame.image.load('./ex06/bullet.png')
+bulletImg = pygame.image.load('./ex06/image/bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 0
@@ -111,7 +111,7 @@ while running:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
                 if bullet_state is "ready":
-                    bulletSound = mixer.Sound("./ex06/laser.wav")
+                    bulletSound = mixer.Sound("./ex06/image/laser.wav")
                     bulletSound.play()
                     bulletX = playerX
                     fire_bullet(bulletX, bulletY)
@@ -144,7 +144,7 @@ while running:
         
         #敵ぶつかった
         if collision:
-            explosionSound = mixer.Sound("./ex06/explosion.wav")
+            explosionSound = mixer.Sound("./ex06/image/explosion.wav")
             explosionSound.play()
             bulletY = 480
             bullet_state = "ready"
