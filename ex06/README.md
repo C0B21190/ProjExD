@@ -1,5 +1,5 @@
 ## 反撃！こうかとん（python特別バージョン）(ex06/fight-back_kokaton.py)
-![](./ex06/image/game.gif)
+<iframe height=500 width=400 src='./ex06/image/game.gif'>
 ### ゲーム概要
 今まで、こうかとんは草原に爆弾を逃げられていた。今回、ついに逃げるをやめて、爆弾たちに反撃を決めました！
 - ex06/fight-back_kokaton.pyを実行する。戦場は片柳研究所の上空です。
