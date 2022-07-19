@@ -38,7 +38,7 @@ for i in range(num_of_enemies):
 #VScodeという名前の弾
 bulletImg = pygame.image.load('./ex06/image/bullet.png')
 bulletX = 0
-bulletY = 48
+bulletY = 480
 bulletX_change = 0
 bulletY_change = 10
 bullet_state = "ready"
